@@ -6,7 +6,7 @@
 /*   By: selrhair <selrhair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:19:06 by selrhair          #+#    #+#             */
-/*   Updated: 2023/06/07 19:28:13 by selrhair         ###   ########.fr       */
+/*   Updated: 2023/06/07 22:42:24 by selrhair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,3 +116,4 @@ int main(int ac, char **av, char **env)
 	}
 	return (0);
 }
+/*test*/
