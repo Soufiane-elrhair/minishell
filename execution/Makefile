@@ -6,7 +6,7 @@
 #    By: selrhair <selrhair@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/11 16:14:19 by selrhair          #+#    #+#              #
-#    Updated: 2023/05/22 16:12:19 by selrhair         ###   ########.fr        #
+#    Updated: 2023/06/07 15:00:04 by selrhair         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ YALLOW	= \033[1;93m
 Green	= \033[1;32m	
 
 # src files
-SRCS	= main.c utils_1.c utils_2.c utils_3.c
+SRCS	= main.c utils_1.c utils_2.c utils_3.c utils_4.c
 
 
 # SRCS	= $(addprefix ./src/, $(SRC)) main.c
