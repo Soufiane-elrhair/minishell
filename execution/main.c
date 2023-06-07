@@ -6,7 +6,7 @@
 /*   By: selrhair <selrhair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:19:06 by selrhair          #+#    #+#             */
-/*   Updated: 2023/06/07 16:04:37 by selrhair         ###   ########.fr       */
+/*   Updated: 2023/06/07 19:28:13 by selrhair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ void	ft_export_help(char *content)
 	a = 0;
 	if (ft_strchr(content, '='))
 	{
-		tmp = (char *) malloc(ft_strlen(content) + 2);
-		while (content[i])
+		tmp = (char *) malloc(ft_strlen(content) + 3);
+		while (content[j])
 		{
-			if (content[j] == '=' && a ==  0)
+			if (content[j] == '=' && a == 0 && content[j + 1] != '"')
 			{
 				a = 1;
 				tmp[i] = content[j];
@@ -41,8 +41,11 @@ void	ft_export_help(char *content)
 			i++;
 			j++;
 		}
-		tmp[i] = '"';
-		tmp[++i] = '\0';
+		if (a == 1)
+		{
+			tmp[i] = '"';
+			tmp[++i] = '\0';
+		}
 		printf("declare -x %s\n", tmp);
 	}
 	else
