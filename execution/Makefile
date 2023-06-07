@@ -6,7 +6,7 @@
 #    By: selrhair <selrhair@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/11 16:14:19 by selrhair          #+#    #+#              #
-#    Updated: 2023/06/07 15:00:04 by selrhair         ###   ########.fr        #
+#    Updated: 2023/06/07 22:41:07 by selrhair         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,6 +41,9 @@ all : $(NAME)
 $(NAME) : $(OBJS) $(LIBFT)
 	@echo  "$(YALLOW)\n[$@]$(NONE)"
 	$(CC) $(CFLAGS) $(OBJS) -o $@ -lreadline
+
+git :
+		make fclean && git add . && git commit -m "update" && git push -u origin main
 
 clean :
 	@echo "$(Green)Cleaning obj files....$(NONE)"
