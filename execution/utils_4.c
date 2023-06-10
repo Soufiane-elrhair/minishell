@@ -6,7 +6,7 @@
 /*   By: selrhair <selrhair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 14:57:17 by selrhair          #+#    #+#             */
-/*   Updated: 2023/06/07 14:57:51 by selrhair         ###   ########.fr       */
+/*   Updated: 2023/06/08 16:53:25 by selrhair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,17 @@ void	ft_echo(t_list *list)
 			printf("%s", list->content);
 			list = list->next;
 		}
+	}
+	else if (ft_lstsize(list) > 2)
+	{
+			printf(">>> %s\n", list->next->content);
+		list = list->next;
+		while (list)
+		{
+			printf("%s", list->content);
+			list = list->next;
+		}
+		printf("\n");
 	}
 	else if (ft_lstsize(list) == 2)
 	{
